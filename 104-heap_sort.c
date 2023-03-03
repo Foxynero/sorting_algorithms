@@ -48,7 +48,7 @@ void max_heapify(int *array, size_t size, size_t base, size_t root)
 
 /**
  * heap_sort - Sort an array of integers in ascending
- *             order using the heap sort algorithm.
+ * order using the heap sort algorithm.
  * @array: An array of integers.
  * @size: The size of the array.
  *

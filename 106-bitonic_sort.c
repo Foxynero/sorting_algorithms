@@ -38,7 +38,7 @@ void bitonic_merge(int *array, size_t size, size_t start, size_t seq,
 		for (i = start; i < start + jump; i++)
 		{
 			if ((flow == UP && array[i] > array[i + jump]) ||
-			    (flow == DOWN && array[i] < array[i + jump]))
+					(flow == DOWN && array[i] < array[i + jump]))
 				swap_ints(array + i, array + i + jump);
 		}
 		bitonic_merge(array, size, start, jump, flow);
@@ -75,7 +75,7 @@ void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow)
 
 /**
  * bitonic_sort - Sort an array of integers in ascending
- *                order using the bitonic sort algorithm.
+ * order using the bitonic sort algorithm
  * @array: An array of integers.
  * @size: The size of the array.
  *
